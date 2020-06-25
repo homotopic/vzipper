@@ -1,0 +1,7 @@
+package app
+
+pkgs = comonad
+
+modules = Data.VZipper
+
+sourcedir = src

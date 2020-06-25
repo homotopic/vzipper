@@ -1,0 +1,12 @@
+image: nixos/nix:latest
+
+before_script:
+- export LC_ALL=C.UTF-8
+
+stages:
+- build
+
+build:
+  stage: build
+  script:
+  - nix-shell --command 'idris --build vzipper.ipkg'
